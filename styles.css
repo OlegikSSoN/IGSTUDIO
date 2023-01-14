@@ -211,6 +211,10 @@ section {
   margin-bottom: 0;
 }
 
+.card_nick_autor {
+  font-size: 14px;
+}
+
 .card_link {
   display: block;
   text-align: center;
@@ -232,10 +236,71 @@ section {
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .card_item_photo {
   width: 100%;
   border-radius: 14px;
   flex-basis: 32%;
+}
+
+.remote-block {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px black;
+  height: 40px;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card_user {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 80px;
+}
+
+.card_item_user {
+  border-radius: 14px;
+  padding: 26px;
+  gap: 15px;
+  flex-basis: 32.5%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  display: flex;
+}
+
+.card_item_user:hover {
+  background: #e3b748;
+}
+
+.card_nick_user {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.card_cover_user {
+  position: relative;
+  overflow: hidden;
+}
+
+.card_img_user {
+  width: 68px;
+  height: 68px;
+}
+
+.card_author_user {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.card_nick_user {
+  font-size: 24px;
 }
