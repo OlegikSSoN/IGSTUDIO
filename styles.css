@@ -181,8 +181,6 @@ input:focus {
 }
 
 .card_img {
-  width: 101px;
-  height: 101px;
   position: absolute;
   object-fit: cover;
 }
@@ -292,6 +290,7 @@ section {
   box-sizing: border-box;
   transition: 0.3s;
   display: flex;
+  margin-top: 10px;
 }
 
 .card_item_user:hover {
@@ -307,7 +306,6 @@ section {
 
 .card_cover_user {
   position: relative;
-  overflow: hidden;
 }
 
 .card_img_user {
@@ -334,9 +332,25 @@ section {
   .header {
     text-align: center;
   }
+}
+
+@media(max-width: 600px){
+  .card {
+    display: block;
+  }
+  .card_item {
+    margin-top: 10px;
+  }
+  .card_item_photo_2 {
+    margin-bottom: 15px;
+  }
   .text_photo {
     top: 50%;
   }
-  .card_user {
+}
+
+@media(max-width: 400px){
+  .card_photo {
+    display: block;
   }
 }
