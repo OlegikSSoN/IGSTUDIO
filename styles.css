@@ -8,13 +8,16 @@ body {
 }
 
 .header {
-  max-width: 1135px;
-  background: #111111;
-  margin: 0 auto;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px 72px 15px;
+  flex-wrap: wrap;
+}
+
+.header_color {
+  background: #111111;
 }
 
 .header_logo {
@@ -32,6 +35,7 @@ body {
   gap: 41px;
   font-size: 16px;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .header_link {
@@ -44,9 +48,6 @@ body {
   background-color: #111111;
   border-radius: 0px;
   border: 2px solid #fff;
-}
-
-.header_item {
 }
 
 form {
@@ -152,6 +153,7 @@ input:focus {
 .card {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 80px;
@@ -240,9 +242,25 @@ section {
 }
 
 .card_item_photo {
+  position: relative;
   width: 100%;
   border-radius: 14px;
-  flex-basis: 32%;
+  flex-basis: 31%;
+  padding-bottom: 16px;
+}
+
+.card_item_photo_2 {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  flex-basis: 65%;
+}
+
+.text_photo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .remote-block {
@@ -260,6 +278,7 @@ section {
 .card_user {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 80px;
@@ -303,4 +322,21 @@ section {
 
 .card_nick_user {
   font-size: 24px;
+}
+
+@media(max-width: 880px){
+  .main {
+    flex-wrap: wrap;
+  }
+  .vl {
+    display: none;
+  }
+  .header {
+    text-align: center;
+  }
+  .text_photo {
+    top: 50%;
+  }
+  .card_user {
+  }
 }
