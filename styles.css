@@ -332,6 +332,9 @@ section {
   .header {
     text-align: center;
   }
+  .text_photo {
+    top: 70%;
+  }
 }
 
 @media(max-width: 600px){
@@ -349,8 +352,11 @@ section {
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 480px){
   .card_photo {
+    display: block;
+  }
+  .card_user {
     display: block;
   }
 }
