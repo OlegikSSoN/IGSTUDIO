@@ -8,13 +8,19 @@ body {
 }
 
 .header {
-  max-width: 1135px;
+  max-width: 100%;
   background: #111111;
+}
+
+.header_color {
   margin: 0 auto;
+  max-width: 1135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px 72px 15px;
+  flex-wrap: wrap;
+  background: #111111;
 }
 
 .header_logo {
@@ -32,6 +38,7 @@ body {
   gap: 41px;
   font-size: 16px;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .header_link {
@@ -44,9 +51,6 @@ body {
   background-color: #111111;
   border-radius: 0px;
   border: 2px solid #fff;
-}
-
-.header_item {
 }
 
 form {
@@ -86,7 +90,6 @@ input:focus {
 .container {
   max-width: 1135px;
   margin: 0 auto;
-  background: #111111;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 177px;
@@ -128,6 +131,12 @@ input:focus {
   padding-top: 100px;
 }
 
+.main_title_4 {
+  font-size: 60px;
+  font-weight: 500;
+  padding-top: 100px;
+}
+
 .main_desc {
   font-size: 18px;
   line-height: 1.8;
@@ -152,6 +161,7 @@ input:focus {
 .card {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 80px;
@@ -179,8 +189,6 @@ input:focus {
 }
 
 .card_img {
-  width: 101px;
-  height: 101px;
   position: absolute;
   object-fit: cover;
 }
@@ -211,6 +219,10 @@ section {
   margin-bottom: 0;
 }
 
+.card_nick_autor {
+  font-size: 14px;
+}
+
 .card_link {
   display: block;
   text-align: center;
@@ -232,10 +244,203 @@ section {
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .card_item_photo {
+  position: relative;
   width: 100%;
   border-radius: 14px;
-  flex-basis: 32%;
+  flex-basis: 31%;
+  padding-bottom: 16px;
+}
+
+.card_item_photo_2 {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  flex-basis: 65%;
+}
+
+.text_photo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remote-block {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px black;
+  height: 40px;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card_user {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 80px;
+}
+
+.card_info_user {
+  line-height: 0.3;
+}
+
+.card_item_user {
+  border-radius: 14px;
+  padding: 26px;
+  gap: 15px;
+  flex-basis: 32.5%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  display: flex;
+  margin-top: 10px;
+}
+
+.card_item_user:hover {
+  background: #e3b748;
+}
+
+.card_cover_user {
+  position: relative;
+}
+
+.card_img_user {
+  width: 68px;
+  height: 68px;
+}
+
+.card_author_user {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.card_nick_user {
+  font-size: 24px;
+}
+
+.main_desc_faq {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main_faq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgba(71, 71, 71, 0.5);
+  padding: 50px 15px 60px;
+  text-align: center;
+  margin-top: 118px;
+  margin-bottom: 100px;
+}
+
+.banner_title {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.5;
+}
+
+.banner_link {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.end {
+  padding-top: 100px;
+}
+
+.header_list_end {
+  display: flex;
+  list-style-type: none;
+  gap: 70px;
+  font-size: 16px;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+.end_list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1135px;
+  padding-top: 100px;
+}
+
+.main_titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1135px;
+}
+
+.main_title_02 {
+  line-height: 1.5;
+}
+
+.liner_img {
+  margin-top: 60%;
+}
+
+@media (max-width: 880px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .vl {
+    display: none;
+  }
+  .header {
+    text-align: center;
+  }
+  .text_photo {
+    top: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: block;
+  }
+  .card_item {
+    margin-top: 10px;
+  }
+  .card_item_photo_2 {
+    margin-bottom: 15px;
+  }
+  .text_photo {
+    top: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_photo {
+    display: block;
+  }
+  .card_user {
+    display: block;
+  }
 }
