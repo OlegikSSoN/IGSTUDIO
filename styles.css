@@ -172,13 +172,14 @@ input:focus {
 }
 
 .card_item {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #2e2e2e;
   border-radius: 14px;
   padding: 26px;
   gap: 15px;
   flex-basis: 32.5%;
   box-sizing: border-box;
   transition: 0.3s;
+  position: relative;
 }
 
 .card_item:hover {
@@ -598,4 +599,16 @@ section {
   align-items: center;
   gap: 10px;
   padding-bottom: 30px;
+}
+
+.remote-block {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: 1px black;
+  height: 40px;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
