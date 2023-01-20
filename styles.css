@@ -612,3 +612,58 @@ section {
   display: flex;
   align-items: center;
 }
+
+.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-top: 2px solid #2e2e2e;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: transparent;
+}
+
+.active:after {
+  content: "\2212";
+  color: rgba(255, 255, 255, 1);
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: black;
+  float: right;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 7px;
+  border-radius: 50%;
+  border: 0px solid;
+  background: #e3b748;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq {
+  flex-basis: 48%;
+}
