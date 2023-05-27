@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family-Montserrat:500, 480, 700, 600|Source+Sans+Pro:400,680 | Roboto:400|Inter:800");
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vl2 {
+  border: 1px solid #4DE6FF;
+  width: 100%;
+}
+
+.title2 {
+  color: #111827;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  width: 500px;
+  text-align: center;
+}
+
 .img {
   background-image: url(../../public/19401834_1029446643859572_236852087944717055_o\ 1.png);
   background-repeat: no-repeat;
