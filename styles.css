@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:ital,wght@0,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family-Montserrat:500, 480, 700, 600|Source+Sans+Pro:400,680 | Roboto:400|Inter:800");
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #1e1e1e;
+  font-family: "Montserrat", sans-serif;
+  background: white;
   font-weight: 600px;
   color: white;
 }
 
 .header {
   max-width: 100%;
-  background: #111111;
+  background: #6867ab;
 }
 
 .header_color {
@@ -18,17 +18,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 15px 72px 15px;
+  padding: 0px 15px 0px 15px;
   flex-wrap: wrap;
 }
 
 .header_logo {
   display: block;
-  width: 143px;
-  height: 30.3px;
-  background-image: url(./images/logo.png);
+  width: 90px;
+  height: 90px;
+  background-image: url(images/Slice\ 4@3x\ 2.png);
   background-repeat: no-repeat;
-  border-radius: 10px;
 }
 
 .header_list {
@@ -46,10 +45,9 @@ body {
 }
 
 .header_link_gradiend {
-  padding: 14px 36px;
-  background-color: #111111;
-  border-radius: 0px;
-  border: 2px solid #fff;
+  padding: 7px 27px;
+  background-color: #4de6ff;
+  border-radius: 8px;
 }
 
 form {
@@ -69,13 +67,10 @@ form {
 
 .button {
   position: absolute;
-  top: 0.4em;
-  right: 0.4em;
-  width: 137px;
-  height: 62px;
-  border-radius: 43px;
-  border: 0px solid;
-  background: #e3b748;
+  left: 15%;
+  top: 35%;
+  width: 544px;
+  height: 192px;
 }
 
 .position {
@@ -87,26 +82,13 @@ input:focus {
 }
 
 .container {
-  max-width: 1135px;
+  max-width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 177px;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #6867ab;
 }
 
 .main_text {
   flex-basis: 571px;
-}
-
-.main_image {
-  display: flex;
-  flex-basis: calc(100% - 490px - 116px);
 }
 
 .main_img {
